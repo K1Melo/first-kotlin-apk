@@ -6,6 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/androidparty" android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop" android:importantForAccessibility="no"/>
     <TextView
             android:text="@string/happy_birthday"
             android:layout_width="wrap_content"
@@ -15,7 +22,7 @@
             android:layout_marginStart="16dp" android:textSize="36sp" android:textColor="@color/black"
             android:fontFamily="@font/rubik_light"/>
     <TextView
-            android:text="From Kauã"
+            android:text="@string/from_kaua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView2"
             android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
